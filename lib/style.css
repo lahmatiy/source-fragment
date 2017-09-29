@@ -1,0 +1,51 @@
+.colored-source {
+  margin: 0;
+  padding: 0;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12px;
+  line-height: 16px;
+}
+.line {
+  max-width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.num {
+  color: #BBB;
+  margin-right: 2px;
+}
+.line:first-child .num,
+.skip-before + .line .num {
+  margin-right: 6px;
+}
+.range {
+  background: #F8F0D0;
+  padding: 2px 4px 2px 4px;
+}
+.line:first-child .range,
+.skip-before + .line .range {
+  padding-left: 2px;
+  margin-left: -2px;
+}
+.skip-before,
+.skip-after {
+  color: #CCC;
+}
+
+.token-string {
+  color: blue;
+}
+.token-comment {
+  color: #008200;
+}
+.token-keyword {
+  color: #006699;
+  font-weight: bold;
+}
+.token-key {
+  color: #006699;
+}
+.token-value {
+  color: #AA8844;
+  font-weight: bold;
+}
