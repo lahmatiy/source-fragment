@@ -1,22 +1,24 @@
-.colored-source {
+.source {
   margin: 0;
   padding: 0;
   font-family: Consolas, Monaco, monospace;
   font-size: 12px;
   line-height: 16px;
 }
+
 .line {
   max-width: 600px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .num {
   color: #BBB;
-  margin-right: 2px;
+  margin-right: 8px;
 }
 .line:first-child .num,
 .skip-before + .line .num {
-  margin-right: 6px;
+  margin-right: 12px;
 }
 .range {
   background: #F8F0D0;
