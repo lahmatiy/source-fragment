@@ -16,21 +16,13 @@
   color: #BBB;
   margin-right: 8px;
 }
-.line:first-child .num,
-.skip-before + .line .num {
-  margin-right: 12px;
-}
 .range {
   background: #F8F0D0;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 0;
+  box-shadow: 0 0 0 2px #F8F0D0;
 }
-.line:first-child .range,
-.skip-before + .line .range {
-  padding-left: 2px;
-  margin-left: -2px;
-}
-.skip-before,
-.skip-after {
+.skip,
+.skip {
   color: #CCC;
 }
 
