@@ -12,7 +12,7 @@
   ],
   "main": "lib/index.js",
   "files": [
-    "index.js",
+    "lib",
     "LICENSE",
     "README.md"
   ],
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "mocha --reporter dot",
-    "lint": "jscs index.js test && eslint index.js test",
+    "lint": "jscs lib test && eslint lib test",
     "travis": "npm run lint && npm run test"
   },
   "eslintConfig": {
