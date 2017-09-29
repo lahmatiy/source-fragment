@@ -1,0 +1,49 @@
+{
+  "name": "source-fragment",
+  "version": "1.0.0",
+  "description": "Fetch source file fragment with highlighting",
+  "author": "Roman Dvornov <rdvornov@gmail.com>",
+  "license": "MIT",
+  "repository": "lahmatiy/source-fragment",
+  "keywords": [
+    "source",
+    "file",
+    "javascript"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "jscs": "^3.0.7",
+    "mocha": "^3.5.3"
+  },
+  "scripts": {
+    "test": "mocha --reporter dot",
+    "lint": "jscs index.js test && eslint index.js test",
+    "travis": "npm run lint && npm run test"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "no-duplicate-case": 2,
+      "no-undef": 2,
+      "no-unused-vars": [
+        2,
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ]
+    }
+  }
+}
