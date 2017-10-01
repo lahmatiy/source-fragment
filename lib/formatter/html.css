@@ -5,22 +5,23 @@
   font-size: 12px;
   line-height: 16px;
 }
+.range {
+  background: #F8F0D0;
+  padding: 2px 0;
+  box-shadow: 0 0 0 2px #F8F0D0;
+}
 
 .line {
   max-width: 600px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.num {
+.line::before {
+  content: attr(num);
   color: #BBB;
   margin-right: 8px;
 }
-.range {
-  background: #F8F0D0;
-  padding: 2px 0;
-  box-shadow: 0 0 0 2px #F8F0D0;
-}
+
 .skip,
 .skip {
   color: #CCC;
