@@ -1,6 +1,6 @@
 {
   "name": "source-fragment",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Fetch source file fragment with highlighting",
   "author": "Roman Dvornov <rdvornov@gmail.com>",
   "license": "MIT",
