@@ -51,6 +51,45 @@ When pasted on HTML page looks like:
 
 ![Example output (html)](https://user-images.githubusercontent.com/270491/31044911-40e99b38-a5e1-11e7-9fb2-22dfd5c7b212.png)
 
+## API
+
+```
+sourceFragment(loc[, options])
+```
+
+Options:
+
+- `format`
+
+  Type: `Object`  
+  Default: `null` (no format is used)
+
+  Defines formatter for a result. There are two predefined formats, that can be choosen by name (e.g. `sourceFragment('...', { format: 'html' })`):
+  - `html` - formats result in HTML
+  - `tty` – formats result using terminal escape codes, useful to output in console with color support
+
+- `linesBefore`
+
+  Type: `Number`  
+  Default: `0`
+
+  Lines added before a range start line.
+
+- `linesAfter`
+
+  Type: `Number`  
+  Default: `0`
+
+  Lines added after a range end line.
+
+- `maxLines`
+
+  Type: `Number`  
+  Default: `Infinity`
+
+  Limits lines number in result.
+
+
 ## License
 
 MIT
