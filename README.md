@@ -29,7 +29,7 @@ To get colored fragment of this code:
 ```js
 var sf = require('source-fragment');
 
-console.log(sf.getColoredSourceFragment('example.js:2:12:5:6', { format: 'tty' }));
+console.log(sf('example.js:2:12:5:6', { format: 'tty' }));
 ```
 
 You'll see in console:
@@ -39,7 +39,7 @@ You'll see in console:
 The same but in `HTML` format:
 
 ```js
-sf.getColoredSourceFragment('example.js:2:12:5:6', { format: 'html' });
+sf('example.js:2:12:5:6', { format: 'html' });
 // <div class="j5as83pdmd85mv2c-source">
 // <style>...</style>
 // <div class="j5as83pdmd85mv2c-line"><span class="j5as83pdmd85mv2c-num">  2</span>...</div>
