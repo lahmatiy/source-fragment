@@ -12,7 +12,6 @@ global.call(
     
         // next line should not contain a whitespaces
 
-        2,
-        // asd
+        2
 	)
 );

@@ -37,7 +37,7 @@ describe('getFragment()', function() {
             ' 12 | ',
             ' 13 | // next line should not contain a whitespaces',
             ' 14 | ',
-            ' 15 | 2,',
+            ' 15 | 2',
             ' 16 | ···'
         ].join('\n'));
     });
