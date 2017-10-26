@@ -32,13 +32,23 @@ describe('getFragment()', function() {
         var result = sourceFragment(path.join(__dirname, 'fixture/script.js:10:9:15:10'), { collapseOffset: true });
         assert.equal(result, [
             '  9 | ···',
-            ' 10 | 1,',
-            ' 11 | // next line should contain whitespaces',
+            ' 10 |         1,',
+            ' 11 |         // next line should contain whitespaces',
             ' 12 | ',
             ' 13 | // next line should not contain a whitespaces',
             ' 14 | ',
             ' 15 | 2,',
-            ' 16 | ···',
+            ' 16 | ···'
+        ].join('\n'));
+    });
+
+    it('plain with tabSize', function() {
+        var result = sourceFragment(path.join(__dirname, 'fixture/script.js:9:1:10:3'), { tabSize: 4 });
+        assert.equal(result, [
+            '  8 | ···',
+            '  9 |     global.nested(',
+            ' 10 |         1,',
+            ' 11 | ···'
         ].join('\n'));
     });
 

@@ -96,6 +96,12 @@ Options:
 
   Cut off common offset in resulting fragment, i.e. move source to the left as much as possible.
 
+- `tabSize`
+
+  Type: `Number`  
+  Default: `8`
+
+  Number of spaces that used as tab replacement, i.e. tabs in source replaces for 8 spaces by default.
 
 ## License
 
