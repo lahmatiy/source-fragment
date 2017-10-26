@@ -4,3 +4,15 @@ module.exports = function hello() {
         '!!!'
     );
 };
+
+global.call(
+	global.nested(
+		1,
+		// next line should contain whitespaces
+    
+        // next line should not contain a whitespaces
+
+        2,
+        // asd
+	)
+);

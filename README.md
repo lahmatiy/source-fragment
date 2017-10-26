@@ -89,6 +89,13 @@ Options:
 
   Limits lines number in result.
 
+- `collapseOffset`
+
+  Type: `Boolean`  
+  Default: `false`
+
+  Cut off common offset in resulting fragment, i.e. move source to the left as much as possible.
+
 
 ## License
 
