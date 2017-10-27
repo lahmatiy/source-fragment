@@ -103,6 +103,11 @@ Options:
 
   Number of spaces that used as tab replacement, i.e. tabs in source replaces for 8 spaces by default.
 
+## Related projects
+
+- [express-source-fragment](https://github.com/lahmatiy/express-source-fragment) – `Express` middleware to fetch a source fragment by request to server.
+- [Component Inspector](https://github.com/lahmatiy/component-inspector) – developer tool to inspect components that can open component creation source location in editor. Has integrations for `React`, `Backbone` and can be adopted for other frameworks.
+
 ## License
 
 MIT
